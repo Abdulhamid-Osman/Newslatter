@@ -27,10 +27,10 @@ app.post("/",(req,res)=>{
     };
 // converting data to string json object
     const jsonData = JSON.stringify(data);
-    const url = "https://us17.api.mailchimp.com/3.0/lists/a5e8425532";
+    const url = "My URL";
     const option = {
         method: "POST",
-        auth: "Abdul:9191b5767bcb121e5d912ca46d8a29f0-us17"
+        auth: "My Authentication"
     }
 
     const request = https.request(url,option,(response)=>{
@@ -54,7 +54,4 @@ app.post("/failure",(req,res)=>{
 app.listen(process.env.PORT || 3000,()=>{
     console.log("Server is now up, Continue working!!");
 })
-//Api Ke
-//9191b5767bcb121e5d912ca46d8a29f0-us17
-//List Id
-//a5e8425532
+
